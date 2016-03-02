@@ -4,7 +4,7 @@ def insertion_sort(arr_to_sort):
     # we begin at the second element
     for j in range(1, len(arr_to_sort)):
 
-        # the key is the number that will be place in the ordered array
+        # the key is the number that will be placed in the ordered array
         key = arr_to_sort[j]
 
         # we know that before the key all elements are ordered (at the beginning there is one element before the key)
