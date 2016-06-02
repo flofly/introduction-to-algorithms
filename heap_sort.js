@@ -17,9 +17,7 @@ class HeapSort {
         // the first element is moved to the end and the next largest element is moved to the first place on each iteration
         // the heapsize decreases because the end of the array become ordered
         for (var j = this.inputArray.length-1; j >= 0; j--) {
-            var buffer = this.inputArray[j];
-            this.inputArray[j] = this.inputArray[0];
-            this.inputArray[0] = buffer;
+            this.inputArray.swap(0, j);
             this.heapSize--;
             this.maxHeapify(0);
         }
@@ -52,9 +50,7 @@ class HeapSort {
         }
 
         if (largest != i) {
-            var buffer = this.inputArray[i];
-            this.inputArray[i] = this.inputArray[largest];
-            this.inputArray[largest] = buffer;
+            this.inputArray.swap(i, largest);
             // we recursively call max heapify on the smallest element freshly moved so that it will moved in the array
             // regarding its size
             this.maxHeapify(largest);
@@ -74,5 +70,12 @@ class HeapSort {
     }
 }
 
-var heapSort = new HeapSort([13,2,25,7,17,20,8,4]);
+Array.prototype.swap = function (x,y) {
+    var b = this[x];
+    this[x] = this[y];
+    this[y] = b;
+    return this;
+}
+
+var heapSort = new HeapSort([13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11]);
 heapSort.main();
