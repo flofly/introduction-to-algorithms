@@ -7,5 +7,6 @@ This is a work in progress.
 Currently are implemented:
 * Insertion sort (python)
 * Heap sort (javascript)
+* Quick sort (javascript)
 
 Your remarks, questions or improvements are welcome.
