@@ -8,9 +8,13 @@ Currently are implemented:
 
 # Python
 * Insertion sort
-# Java
-* Heap sort (javascript)
-* Quick sort (javascript)
-* Merge sort (javascript)
+
+# JavaScript
+* Heap sort
+* Quick sort
+* Merge sort
+* BFS
+* DFS
+* Building a Queue using Stacks
 
 Your remarks, questions or improvements are welcome.
