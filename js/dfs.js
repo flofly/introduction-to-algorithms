@@ -19,7 +19,7 @@ function dfs(current, distance) {
 
             dfsMetaData[graph[current][i]].predecessor = current;
 
-            dfs(graph[current][i], distance + 1); // TODO bugs https://www.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/p/challenge-implement-breadth-first-search
+            dfs(graph[current][i], distance + 1);
 
         }
 
